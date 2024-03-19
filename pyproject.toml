@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "qa-guru-python-10-18"
+version = "0.1.0"
+description = "homework 18 venv poetry"
+authors = ["Dimitri Maksimov <dmitry-maksimov@yandex.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+selene = "2.0.0rc2"
+pytest = "8.1.1"
+readme-md = "^2019.1.28"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
