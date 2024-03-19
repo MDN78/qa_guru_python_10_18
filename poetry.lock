@@ -205,20 +205,6 @@ files = [
 ]
 
 [[package]]
-name = "click"
-version = "8.1.7"
-description = "Composable command line interface toolkit"
-optional = false
-python-versions = ">=3.7"
-files = [
-    {file = "click-8.1.7-py3-none-any.whl", hash = "sha256:ae74fb96c20a0277a1d615f1e4d73c8414f5a98db8b799a7931d1582f3390c28"},
-    {file = "click-8.1.7.tar.gz", hash = "sha256:ca9853ad459e787e2192211578cc907e7594e294c7ccc834310722b41b9ca6de"},
-]
-
-[package.dependencies]
-colorama = {version = "*", markers = "platform_system == \"Windows\""}
-
-[[package]]
 name = "colorama"
 version = "0.4.6"
 description = "Cross-platform colored terminal text."
@@ -303,21 +289,6 @@ files = [
 colors = ["colorama (>=0.4.6)"]
 
 [[package]]
-name = "markdown"
-version = "3.6"
-description = "Python implementation of John Gruber's Markdown."
-optional = false
-python-versions = ">=3.8"
-files = [
-    {file = "Markdown-3.6-py3-none-any.whl", hash = "sha256:48f276f4d8cfb8ce6527c8f79e2ee29708508bf4d40aa410fbc3b4ee832c850f"},
-    {file = "Markdown-3.6.tar.gz", hash = "sha256:ed4f41f6daecbeeb96e576ce414c41d2d876daa9a16cb35fa8ed8c2ddfad0224"},
-]
-
-[package.extras]
-docs = ["mdx-gh-links (>=0.2)", "mkdocs (>=1.5)", "mkdocs-gen-files", "mkdocs-literate-nav", "mkdocs-nature (>=0.6)", "mkdocs-section-index", "mkdocstrings[python]"]
-testing = ["coverage", "pyyaml"]
-
-[[package]]
 name = "mccabe"
 version = "0.7.0"
 description = "McCabe checker, plugin for flake8"
@@ -326,39 +297,6 @@ python-versions = ">=3.6"
 files = [
     {file = "mccabe-0.7.0-py2.py3-none-any.whl", hash = "sha256:6c2d30ab6be0e4a46919781807b4f0d834ebdd6c6e3dca0bda5a15f863427b6e"},
     {file = "mccabe-0.7.0.tar.gz", hash = "sha256:348e0240c33b60bbdf4e523192ef919f28cb2c3d7d5c7794f74009290f236325"},
-]
-
-[[package]]
-name = "mdown"
-version = "2020.12.3"
-description = "markdown generator"
-optional = false
-python-versions = "*"
-files = [
-    {file = "mdown-2020.12.3.tar.gz", hash = "sha256:4f9687ece5e54a12a83faaf45b89e7a274f968de628cc1be28aa8d3ea35a0346"},
-]
-
-[[package]]
-name = "mkdir"
-version = "2020.12.3"
-description = "mkdir"
-optional = false
-python-versions = "*"
-files = [
-    {file = "mkdir-2020.12.3.tar.gz", hash = "sha256:7fe234e9412b1dea78a09c26f31d4f83fd760648e7a9c08108081e1bed8f7da1"},
-]
-
-[package.dependencies]
-values = "*"
-
-[[package]]
-name = "orderdict"
-version = "2020.12.3"
-description = "order dict"
-optional = false
-python-versions = "*"
-files = [
-    {file = "orderdict-2020.12.3.tar.gz", hash = "sha256:a4e15f0085f0b3152dd45fd907f9036d1ed0e7f004920ce0a05c7190d2cacdb0"},
 ]
 
 [[package]]
@@ -415,16 +353,6 @@ files = [
 [package.extras]
 dev = ["pre-commit", "tox"]
 testing = ["pytest", "pytest-benchmark"]
-
-[[package]]
-name = "public"
-version = "2020.12.3"
-description = "replace __all__ with @public.add decorator"
-optional = false
-python-versions = "*"
-files = [
-    {file = "public-2020.12.3.tar.gz", hash = "sha256:2919ef9037e2a2d2563f8431adaa09b6b129d5398d0a687e42f00593484a9aa2"},
-]
 
 [[package]]
 name = "pycparser"
@@ -508,26 +436,6 @@ files = [
 cli = ["click (>=5.0)"]
 
 [[package]]
-name = "readme-md"
-version = "2019.1.28"
-description = "README.md generator"
-optional = false
-python-versions = "*"
-files = [
-    {file = "readme-md-2019.1.28.tar.gz", hash = "sha256:01492f210443fa37a0b34e051ae24ca23e4a92f0f39ef03b5c02cf09d76df455"},
-    {file = "readme_md-2019.1.28-py2.py3-none-any.whl", hash = "sha256:687b2799d9e1297f018b71a2fb4aaa22b2e23de4bf30b2b7ee4f457fcef8247f"},
-]
-
-[package.dependencies]
-Click = "*"
-Markdown = "*"
-mdown = "*"
-public = "*"
-requests = "*"
-setupcfg = "*"
-setuptools = "*"
-
-[[package]]
 name = "requests"
 version = "2.31.0"
 description = "Python HTTP for Humans."
@@ -581,37 +489,6 @@ certifi = ">=2021.10.8"
 trio = ">=0.17,<1.0"
 trio-websocket = ">=0.9,<1.0"
 urllib3 = {version = ">=1.26,<3", extras = ["socks"]}
-
-[[package]]
-name = "setupcfg"
-version = "2020.12.3"
-description = "setup.cfg helper"
-optional = false
-python-versions = "*"
-files = [
-    {file = "setupcfg-2020.12.3.tar.gz", hash = "sha256:80a6454e75e77eaacadb5182933b5c92b21a113bfd10926b0bab075a2f74533e"},
-]
-
-[package.dependencies]
-click = "*"
-orderdict = "*"
-write = "*"
-
-[[package]]
-name = "setuptools"
-version = "69.2.0"
-description = "Easily download, build, install, upgrade, and uninstall Python packages"
-optional = false
-python-versions = ">=3.8"
-files = [
-    {file = "setuptools-69.2.0-py3-none-any.whl", hash = "sha256:c21c49fb1042386df081cb5d86759792ab89efca84cf114889191cd09aacc80c"},
-    {file = "setuptools-69.2.0.tar.gz", hash = "sha256:0ff4183f8f42cd8fa3acea16c45205521a4ef28f73c6391d8a25e92893134f2e"},
-]
-
-[package.extras]
-docs = ["furo", "jaraco.packaging (>=9.3)", "jaraco.tidelift (>=1.4)", "pygments-github-lexers (==0.0.5)", "rst.linker (>=1.9)", "sphinx (<7.2.5)", "sphinx (>=3.5)", "sphinx-favicon", "sphinx-inline-tabs", "sphinx-lint", "sphinx-notfound-page (>=1,<2)", "sphinx-reredirects", "sphinxcontrib-towncrier"]
-testing = ["build[virtualenv]", "filelock (>=3.4.0)", "importlib-metadata", "ini2toml[lite] (>=0.9)", "jaraco.develop (>=7.21)", "jaraco.envs (>=2.2)", "jaraco.path (>=3.2.0)", "mypy (==1.9)", "packaging (>=23.2)", "pip (>=19.1)", "pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=2.2)", "pytest-home (>=0.5)", "pytest-mypy (>=0.9.1)", "pytest-perf", "pytest-ruff (>=0.2.1)", "pytest-timeout", "pytest-xdist (>=3)", "tomli", "tomli-w (>=1.0.0)", "virtualenv (>=13.0.0)", "wheel"]
-testing-integration = ["build[virtualenv] (>=1.0.3)", "filelock (>=3.4.0)", "jaraco.envs (>=2.2)", "jaraco.path (>=3.2.0)", "packaging (>=23.2)", "pytest", "pytest-enabler", "pytest-xdist", "tomli", "virtualenv (>=13.0.0)", "wheel"]
 
 [[package]]
 name = "sniffio"
@@ -712,16 +589,6 @@ socks = ["pysocks (>=1.5.6,!=1.5.7,<2.0)"]
 zstd = ["zstandard (>=0.18.0)"]
 
 [[package]]
-name = "values"
-version = "2020.12.3"
-description = "values.get(input) - create list from input"
-optional = false
-python-versions = "*"
-files = [
-    {file = "values-2020.12.3.tar.gz", hash = "sha256:30b1b74674b546188b77d8398de17ea49f3692191114da43c703bda5b54402f5"},
-]
-
-[[package]]
 name = "webdriver-manager"
 version = "4.0.1"
 description = "Library provides the way to automatically manage drivers for different browsers"
@@ -736,19 +603,6 @@ files = [
 packaging = "*"
 python-dotenv = "*"
 requests = "*"
-
-[[package]]
-name = "write"
-version = "2020.12.3"
-description = ""
-optional = false
-python-versions = "*"
-files = [
-    {file = "write-2020.12.3.tar.gz", hash = "sha256:ab53f74dd66ededa8dc3e32623e194d72fa78c1fdbe24ae30099de86398b17d4"},
-]
-
-[package.dependencies]
-mkdir = "*"
 
 [[package]]
 name = "wsproto"
@@ -767,4 +621,4 @@ h11 = ">=0.9.0,<1"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "9a5456be7923339f02848184461578e658951b35eeba0aa8f364b47f374f2b4a"
+content-hash = "92e58afddfab1dd25803a7cea5ec3133d93e312a0b7f140adf7ff8ab5a083a70"
