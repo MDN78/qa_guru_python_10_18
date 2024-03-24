@@ -26,6 +26,25 @@
 5. Чтобы виртуальная среда всегда формировалась в самом проекте - надо задать параметр командой  
    `poetry config virtualenvs.in-project true`
 
+Команды:
+
+```
+poetry --version  
+poetry new my-package - новый проект  
+poetry shell - активация виртуального окружения  
+poetry init  - инициализация текущего проекта  
+poetry install - установка всего проекта и зависимостей
+poetry add --dev pylint
+poetry update - обновление проекта
+poetry add requests pendulum - добавить пакет
+poetry remove pendulum -  удаление зависимости
+poetry show - 
+poetry show --tree - 
+poetry show pendulum` - указать установленные зависимости
+```
+
+
+
 После скачивания проекта на локальную машину, установка зависимостей командой `poetry install`  
 Бывает после копирования проекта на локальную машину нужно указать путь до `poetry.exe` - PyCharm попросит сделать это  
    
